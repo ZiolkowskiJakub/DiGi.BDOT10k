@@ -8,4 +8,10 @@
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="DiGi.GML">
+      <HintPath>..\references\DiGi.GML.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
