@@ -9,9 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="DiGi.GML">
-      <HintPath>..\references\DiGi.GML.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\..\DiGi.GML\DiGi.GML\DiGi.GML.csproj" />
   </ItemGroup>
 
 </Project>

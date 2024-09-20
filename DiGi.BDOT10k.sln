@@ -5,7 +5,9 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiGi.BDOT10k", "DiGi.BDOT10k\DiGi.BDOT10k.csproj", "{A4F2C5E7-A9A3-4905-9CA9-E47FF1E6E227}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiGi.BDOT10k.Test", "DiGi.BDOT10k.Test\DiGi.BDOT10k.Test.csproj", "{4544E5F6-B2F5-49E7-BE02-E3E6538055A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiGi.BDOT10k.Test", "DiGi.BDOT10k.Test\DiGi.BDOT10k.Test.csproj", "{4544E5F6-B2F5-49E7-BE02-E3E6538055A4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiGi.GML", "..\DiGi.GML\DiGi.GML\DiGi.GML.csproj", "{8677058A-1099-4801-8557-CB24A543F288}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4544E5F6-B2F5-49E7-BE02-E3E6538055A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4544E5F6-B2F5-49E7-BE02-E3E6538055A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4544E5F6-B2F5-49E7-BE02-E3E6538055A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8677058A-1099-4801-8557-CB24A543F288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8677058A-1099-4801-8557-CB24A543F288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8677058A-1099-4801-8557-CB24A543F288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8677058A-1099-4801-8557-CB24A543F288}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

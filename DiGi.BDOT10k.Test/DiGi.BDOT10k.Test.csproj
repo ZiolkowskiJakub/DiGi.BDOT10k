@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\DiGi.GML\DiGi.GML\DiGi.GML.csproj" />
     <ProjectReference Include="..\DiGi.BDOT10k\DiGi.BDOT10k.csproj" />
   </ItemGroup>
 

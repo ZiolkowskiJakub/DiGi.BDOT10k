@@ -3,7 +3,7 @@ using System;
 
 namespace DiGi.BDOT10k.Classes
 {
-    public abstract class OT_ObiektTopograficzny
+    public abstract class OT_ObiektTopograficzny : GML.Classes.GML
     {
         public string lokalnyId { get; set; }
         public string przestrzenNazw { get; set; }
