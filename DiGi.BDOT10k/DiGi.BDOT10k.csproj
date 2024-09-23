@@ -12,4 +12,10 @@
     <ProjectReference Include="..\..\DiGi.GML\DiGi.GML\DiGi.GML.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="DiGi.GML">
+      <HintPath>..\references\DiGi.GML.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

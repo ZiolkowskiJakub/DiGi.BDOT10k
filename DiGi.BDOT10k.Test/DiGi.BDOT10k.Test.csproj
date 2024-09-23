@@ -13,4 +13,10 @@
     <ProjectReference Include="..\DiGi.BDOT10k\DiGi.BDOT10k.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="DiGi.GML">
+      <HintPath>..\references\DiGi.GML.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

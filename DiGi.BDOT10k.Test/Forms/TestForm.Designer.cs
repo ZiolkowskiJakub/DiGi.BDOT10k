@@ -30,6 +30,7 @@
         {
             Button_Load = new Button();
             Button_Close = new Button();
+            Button_Clone = new Button();
             SuspendLayout();
             // 
             // Button_Load
@@ -54,12 +55,24 @@
             Button_Close.UseVisualStyleBackColor = true;
             Button_Close.Click += Button_Close_Click;
             // 
+            // Button_Clone
+            // 
+            Button_Clone.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            Button_Clone.Location = new Point(12, 47);
+            Button_Clone.Name = "Button_Clone";
+            Button_Clone.Size = new Size(230, 29);
+            Button_Clone.TabIndex = 0;
+            Button_Clone.Text = "Clone";
+            Button_Clone.UseVisualStyleBackColor = true;
+            Button_Clone.Click += Button_Clone_Click;
+            // 
             // TestForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(254, 465);
             Controls.Add(Button_Close);
+            Controls.Add(Button_Clone);
             Controls.Add(Button_Load);
             MaximizeBox = false;
             MinimizeBox = false;
@@ -73,5 +86,6 @@
 
         private Button Button_Load;
         private Button Button_Close;
+        private Button Button_Clone;
     }
 }

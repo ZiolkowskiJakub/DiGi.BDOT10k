@@ -1,9 +1,10 @@
 ﻿using DiGi.BDOT10k.Enums;
+using DiGi.BDOT10k.Interfaces;
 using DiGi.GML.Classes;
 
 namespace DiGi.BDOT10k.Classes
 {
-    public class OT_ADMS_A : OT_PodzialTerytorialny
+    public class OT_ADMS_A : OT_PodzialTerytorialny, IOT_PowierzchniowyObiektGeometryczny
     {
         public string? identyfikatorSIMC { get; set; }
 

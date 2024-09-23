@@ -1,10 +1,11 @@
 ﻿using DiGi.BDOT10k.Enums;
+using DiGi.BDOT10k.Interfaces;
 using DiGi.GML.Classes;
 using System.Collections.Generic;
 
 namespace DiGi.BDOT10k.Classes
 {
-    public class OT_BUBD_A : OT_BudynkiBudowleIUrzadzenia
+    public class OT_BUBD_A : OT_BudynkiBudowleIUrzadzenia, IOT_PowierzchniowyObiektGeometryczny
     {
         public string? kodKst { get; set; }
         public OT_FunOgolnaBudynku? funkcjaOgolnaBudynku { get; set; }
