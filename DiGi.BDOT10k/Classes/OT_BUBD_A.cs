@@ -9,8 +9,8 @@ namespace DiGi.BDOT10k.Classes
     {
         public string? kodKst { get; set; }
         public OT_FunOgolnaBudynku? funkcjaOgolnaBudynku { get; set; }
-        public List<OT_FunSzczegolowaBudynkuType>? funkcjaSzczegolowaBudynku { get; set; }
-        public OT_FunSzczegolowaBudynkuType przewazajacaFunkcjaBudynku { get; set; }
+        public List<OT_FunSzczegolowaBudynku>? funkcjaSzczegolowaBudynku { get; set; }
+        public OT_FunSzczegolowaBudynku przewazajacaFunkcjaBudynku { get; set; }
         public ushort? liczbaKondygnacji { get; set; }
         public string? nazwa { get; set; }
         public List<string>? identyfikatorEGiB { get; set; }

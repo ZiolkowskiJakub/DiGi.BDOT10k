@@ -2,7 +2,7 @@
 
 namespace DiGi.BDOT10k.Enums
 {
-    public enum OT_FunSzczegolowaBudynkuType
+    public enum OT_FunSzczegolowaBudynku
     {
         [Description("apteka")] apteka,
         [Description("archiwum")] archiwum,
