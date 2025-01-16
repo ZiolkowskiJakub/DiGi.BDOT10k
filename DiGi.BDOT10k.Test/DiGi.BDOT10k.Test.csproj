@@ -14,7 +14,7 @@
 
   <ItemGroup>
     <Reference Include="DiGi.GML">
-      <HintPath>..\references\DiGi.GML.dll</HintPath>
+      <HintPath>..\..\DiGi.GML\bin\DiGi.GML.dll</HintPath>
     </Reference>
   </ItemGroup>
 
