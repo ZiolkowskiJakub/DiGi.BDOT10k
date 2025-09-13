@@ -7,14 +7,14 @@ namespace DiGi.BDOT10k.Classes
 {
     public class OT_BUBD_A : OT_BudynkiBudowleIUrzadzenia, IOT_PowierzchniowyObiektGeometryczny
     {
-        public string? kodKst { get; set; }
-        public OT_FunOgolnaBudynku? funkcjaOgolnaBudynku { get; set; }
-        public List<OT_FunSzczegolowaBudynku>? funkcjaSzczegolowaBudynku { get; set; }
-        public OT_FunSzczegolowaBudynku przewazajacaFunkcjaBudynku { get; set; }
-        public ushort? liczbaKondygnacji { get; set; }
-        public string? nazwa { get; set; }
-        public List<string>? identyfikatorEGiB { get; set; }
-        public Surface geometria { get; set; }
+        public string? kodKst { get; set; } = null;
+        public OT_FunOgolnaBudynku? funkcjaOgolnaBudynku { get; set; } = null;
+        public List<OT_FunSzczegolowaBudynku>? funkcjaSzczegolowaBudynku { get; set; } = null;
+        public OT_FunSzczegolowaBudynku przewazajacaFunkcjaBudynku { get; set; } = OT_FunSzczegolowaBudynku.budynek_jednorodzinny;
+        public ushort? liczbaKondygnacji { get; set; } = null;
+        public string? nazwa { get; set; } = null;
+        public List<string>? identyfikatorEGiB { get; set; } = null;
+        public Surface geometria { get; set; } = new Polygon();
 
         public OT_BUBD_A()
         {

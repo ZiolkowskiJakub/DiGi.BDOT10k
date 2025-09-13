@@ -25,14 +25,12 @@ namespace DiGi.BDOT10k.Test
 
         private void Button_Load_Click(object sender, EventArgs e)
         {
-            string path = null;
-
-            path = @"C:\Users\jakub\Downloads\Geoportal\PL.PZGiK.337.0201__OT_BUBD_A.xml";
+            string path = @"C:\Users\jakub\Downloads\Geoportal\PL.PZGiK.337.0201__OT_BUBD_A.xml";
             path = @"C:\Users\jakub\Downloads\Geoportal\PL.PZGiK.337.0201__OT_ADMS_A.xml";
 
-            OT_ADMS_A oT_ADMS_A = new OT_ADMS_A();
+            OT_ADMS_A oT_ADMS_A = new();
 
-            FeatureCollection featureCollection = GML.Convert.ToGML<FeatureCollection>(path)?.FirstOrDefault();
+            FeatureCollection? featureCollection = GML.Convert.ToGML<FeatureCollection>(path)?.FirstOrDefault();
 
             //using (OpenFileDialog openFileDialog = new OpenFileDialog())
             //{
@@ -65,23 +63,21 @@ namespace DiGi.BDOT10k.Test
 
         private void Button_Clone_Click(object sender, EventArgs e)
         {
-            string path = null;
-
             //path = @"C:\Users\jakub\Downloads\PL.PZGiK.337.0201__OT_BUBD_A.xml";
-            path = @"C:\Users\jakub\Downloads\Geoportal\PL.PZGiK.337.0201__OT_ADMS_A.xml";
+            string path = @"C:\Users\jakub\Downloads\Geoportal\PL.PZGiK.337.0201__OT_ADMS_A.xml";
 
-            OT_ADMS_A oT_ADMS_A = new OT_ADMS_A();
+            OT_ADMS_A oT_ADMS_A = new ();
 
-            FeatureCollection featureCollection = GML.Convert.ToGML<FeatureCollection>(path)?.FirstOrDefault();
-            List<IFeatureMember> featureMembers = featureCollection.featureMember;
-            if(featureMembers == null)
+            FeatureCollection? featureCollection = GML.Convert.ToGML<FeatureCollection>(path)?.FirstOrDefault();
+            List<IFeatureMember>? featureMembers = featureCollection?.featureMember;
+            if(featureCollection?.featureMember is null)
             {
                 return;
             }
 
             foreach (OT_ADMS_A OT_ADMS_A in featureCollection.featureMember)
             {
-                OT_ADMS_A OT_ADMS_A_Colne = OT_ADMS_A.Clone();
+                _ = OT_ADMS_A.Clone();
             }
         }
     }
