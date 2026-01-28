@@ -16,11 +16,10 @@ namespace DiGi.BDOT10k.Classes
 
         public string identyfikatorPRNG { get; set; } = string.Empty;
 
-        public Surface geometria{ get; set; } = new Polygon();
+        public Surface geometria { get; set; } = new Polygon();
 
-        public OT_ADMS_A() 
+        public OT_ADMS_A()
         {
-            
         }
     }
 }

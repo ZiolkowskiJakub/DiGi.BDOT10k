@@ -21,7 +21,6 @@ namespace DiGi.BDOT10k.Classes
 
         public OT_ObiektTopograficzny()
         {
-
         }
     }
 }
