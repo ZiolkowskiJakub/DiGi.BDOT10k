@@ -3,6 +3,6 @@
     <File Path=".editorconfig" />
     <File Path="Directory.Build.props" />
   </Folder>
-  <Project Path="DiGi.BDOT10k.Test/DiGi.BDOT10k.Test.csproj" />
+  <Project Path="DiGi.BDOT10k.Geometry/DiGi.BDOT10k.Geometry.csproj" Id="fb4f2434-da76-4a86-b1df-994f78c5a163" />
   <Project Path="DiGi.BDOT10k/DiGi.BDOT10k.csproj" />
 </Solution>

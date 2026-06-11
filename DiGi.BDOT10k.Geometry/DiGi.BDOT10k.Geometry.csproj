@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<OutputPath>..\bin\</OutputPath>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+		<Nullable>enable</Nullable>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<!-- Redirect AssemblyAttributes.cs so each project has its own -->
+		<TargetFrameworkMonikerAssemblyAttributesPath>$(IntermediateOutputPath)$(MSBuildProjectName).AssemblyAttributes.cs</TargetFrameworkMonikerAssemblyAttributesPath>
+		<!-- Avoid duplicate TargetFrameworkAttribute -->
+		<GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+	</PropertyGroup>
+	<ItemGroup>
+		<!-- Prevent duplicate 'Compile' inclusion of the generated AssemblyAttributes.cs -->
+		<Compile Remove="$(IntermediateOutputPath)$(MSBuildProjectName).AssemblyAttributes.cs" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\DiGi.BDOT10k\DiGi.BDOT10k.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="DiGi.Core">
+		  <HintPath>..\..\DiGi.GIS.IO\bin\DiGi.Core.dll</HintPath>
+		</Reference>
+		<Reference Include="DiGi.Geometry">
+		  <HintPath>..\..\DiGi.Geometry\bin\DiGi.Geometry.dll</HintPath>
+		</Reference>
+		<Reference Include="DiGi.Geometry.Object">
+		  <HintPath>..\..\DiGi.Geometry\bin\DiGi.Geometry.Object.dll</HintPath>
+		</Reference>
+		<Reference Include="DiGi.Geometry.Visual">
+		  <HintPath>..\..\DiGi.Geometry.Visual\bin\DiGi.Geometry.Visual.dll</HintPath>
+		</Reference>
+		<Reference Include="DiGi.GML">
+			<HintPath>..\..\DiGi.GML\bin\DiGi.GML.dll</HintPath>
+		</Reference>
+		<Reference Include="DiGi.Math">
+		  <HintPath>..\..\DiGi.Math\bin\DiGi.Math.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Classes\" />
+	  <Folder Include="Interfaces\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="System.Text.Json" Version="10.0.7" />
+	</ItemGroup>
+
+</Project>
