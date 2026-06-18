@@ -7,9 +7,9 @@ using DiGi.Geometry.Visual.Planar.Classes;
 namespace DiGi.BDOT10k.Geometry.Classes
 {
     /// <summary>
-    /// Reprezentuje abstrakcyjny obiekt geometryczny powierzchniowy w standardzie BDOT10k.
+    /// Represents an abstract surface geometric object in the BDOT10k standard.
     /// </summary>
-    /// <typeparam name="T">Typ obiektu danych wejściowych implementujący interfejs <see cref="IOT_PowierzchniowyObiektGeometryczny"/>.</typeparam>
+    /// <typeparam name="T">The type of the input data object implementing the <see cref="IOT_PowierzchniowyObiektGeometryczny"/> interface.</typeparam>
     public abstract class PowierzchniowyObiektGeometryczny<T> : VisualPolygonalFace2D, IObiektGeometryczny<PolygonalFace2D, ISurfaceAppearance> where T : IOT_PowierzchniowyObiektGeometryczny
     {
         protected T? oT_PowierzchniowyObiektGeometryczny;
@@ -19,17 +19,17 @@ namespace DiGi.BDOT10k.Geometry.Classes
         private Point2D? internalPoint2D = null;
 
         /// <summary>
-        /// Inicjalizuje nową instancję klasy <see cref="PowierzchniowyObiektGeometryczny{T}"/>.
+        /// Initializes a new instance of the <see cref="PowierzchniowyObiektGeometryczny{T}"/> class.
         /// </summary>
-        /// <param name="oT_PowierzchniowyObiektGeometryczny">Obiekt danych wejściowych zawierający geometrię powierzchniową.</param>
-        /// <param name="surfaceAppearance">Wygląd powierzchni obiektu.</param>
+        /// <param name="oT_PowierzchniowyObiektGeometryczny">The input data object containing the surface geometry.</param>
+        /// <param name="surfaceAppearance">The surface appearance of the object.</param>
         public PowierzchniowyObiektGeometryczny(T? oT_PowierzchniowyObiektGeometryczny, ISurfaceAppearance? surfaceAppearance)
             : base(Convert.ToDiGi(oT_PowierzchniowyObiektGeometryczny?.geometria), surfaceAppearance)
         {
             this.oT_PowierzchniowyObiektGeometryczny = GML.Query.Clone(oT_PowierzchniowyObiektGeometryczny);
         }
 
-        /// <summary> Pobiera klon obiektu danych wejściowych powiązanego z tym obiektem geometrycznym. </summary>
+        /// <summary> Gets a clone of the input data object associated with this geometric object. </summary>
         public T? OT_PowierzchniowyObiektGeometryczny
         {
             get
@@ -39,15 +39,15 @@ namespace DiGi.BDOT10k.Geometry.Classes
         }
 
         /// <summary>
-        /// Pobiera typ obiektu danych wejściowych powiązanego z tym obiektem geometrycznym.
+        /// Gets the type of the input data object associated with this geometric object.
         /// </summary>
-        /// <returns>Typ obiektu danych wejściowych lub <see langword="null"/>, jeśli obiekt nie jest przypisany.</returns>
+        /// <returns>The type of the input data object, or <see langword="null"/> if the object is not assigned.</returns>
         public System.Type? GetUnderlyingType()
         {
             return oT_PowierzchniowyObiektGeometryczny?.GetType();
         }
 
-        /// <summary> Pobiera pole powierzchni obiektu geometrycznego. </summary>
+        /// <summary> Gets the area of the geometric object. </summary>
         public double Area
         {
             get
@@ -61,7 +61,7 @@ namespace DiGi.BDOT10k.Geometry.Classes
             }
         }
 
-        /// <summary> Pobiera prostokąt ograniczający (bounding box) obiektu w przestrzeni 2D. </summary>
+        /// <summary> Gets the bounding box of the object in 2D space. </summary>
         public BoundingBox2D? BoundingBox2D
         {
             get
@@ -75,7 +75,7 @@ namespace DiGi.BDOT10k.Geometry.Classes
             }
         }
 
-        /// <summary> Pobiera punkt wewnętrzny obiektu geometrycznego. </summary>
+        /// <summary> Gets the internal point of the geometric object. </summary>
         public Point2D? InternalPoint2D
         {
             get
