@@ -1,7 +1,9 @@
 <Solution>
   <Folder Name="/Solution Items/">
     <File Path=".editorconfig" />
+    <File Path="DefaultDocumentation.json" />
     <File Path="Directory.Build.props" />
+    <File Path="Directory.Build.targets" />
   </Folder>
   <Project Path="DiGi.BDOT10k.Geometry/DiGi.BDOT10k.Geometry.csproj" Id="fb4f2434-da76-4a86-b1df-994f78c5a163" />
   <Project Path="DiGi.BDOT10k/DiGi.BDOT10k.csproj" />
