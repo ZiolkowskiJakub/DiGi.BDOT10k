@@ -1,4 +1,4 @@
-#### [DiGi\.BDOT10k\.Geometry](index.md 'index')
+#### [DiGi\.BDOT10k\.Geometry](DiGi.BDOT10k.Geometry.Overview.md 'DiGi\.BDOT10k\.Geometry\.Overview')
 
 ## DiGi\.BDOT10k\.Geometry Assembly
 

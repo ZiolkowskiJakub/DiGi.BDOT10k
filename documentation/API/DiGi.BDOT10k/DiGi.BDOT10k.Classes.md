@@ -1,4 +1,4 @@
-#### [DiGi\.BDOT10k](index.md 'index')
+#### [DiGi\.BDOT10k](DiGi.BDOT10k.Overview.md 'DiGi\.BDOT10k\.Overview')
 
 ## DiGi\.BDOT10k\.Classes Namespace
 ### Classes
