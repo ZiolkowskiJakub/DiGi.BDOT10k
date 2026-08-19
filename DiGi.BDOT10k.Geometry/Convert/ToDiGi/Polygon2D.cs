@@ -36,7 +36,7 @@ namespace DiGi.BDOT10k.Geometry
                 point2Ds.Add(new Point2D(values[i], values[i + 1]));
             }
 
-            return new Polygon2D(point2Ds);
+            return DiGi.Geometry.Planar.Create.Polygon2D(point2Ds);
         }
     }
 }
